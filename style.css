@@ -1,75 +1,173 @@
-<!DOCTYPE html>
-<html lang='uk'>
-<head>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <title>| nq.ua</title>
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
-</head>
-<body>
+.all_in{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+}
+.buttons{
+    flex-direction: row;
+    gap: 10vw;
+
+}
+.button{
+    padding: 3%;
+    margin-right: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.btn_p{
+    display: inline;
+}
+.h1{
+    border: 3px dashed black;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 30px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+body{
+    font-family: Montserrat;
+}
+@keyframes animate1 {
+    0%{
+        transform: none;
+    }
+    25%{
+        transform: translate(40px,40px);
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    75%{
+        transform: translateY(40px);
+    }
+}
+@keyframes animate2 {
+    0%{
+        transform: none;
+    }
+    25%{
+        transform: translate(-40px,-40px);
+    }
+    50%{
+        transform: translateX(-40px);
+    }
+    75%{
+        transform: translateY(-40px);
+    }
+}
+.anime1{
+    animation: animate1 2.5s ease-out;
+    animation-iteration-count: infinite;
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    margin-left: 5px;
     
-    <!-- Додай верстку для додатка тут -->
-   <header> 
-    <div class="animes_css">
-    <img class="anime1" src="https://png.pngtree.com/element_our/sm/20180516/sm_5afbe35ff3ec9.jpg">
-    <img class="anime2" src="https://pngimg.com/uploads/minus/minus_PNG55.png">
-    </div>
-    <h1> nq </h1>
+}
+.anime2{
+    animation: animate2 2.5s ease-out;
+    animation-iteration-count: infinite;
+    width: 40px;
+    height: 40px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    margin-left: 5px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 30px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: white;
+}
+.stats_div{
+    background-image: url(https://previews.123rf.com/images/zagory/zagory2112/zagory211200210/179621784-seamless-background-with-simple-icons-on-the-theme-of-mathematics-and-learning-the-dark-contour-on.jpg);
+    margin-top:10px;
+    
+}
+div p{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    display: inline-flex;
+    margin: 3px;
+    padding: 3px;
+}
+#stats h3{
+    background-color: rgb(255, 255, 255);
+    border-top: 8px double rgb(0, 0, 0);
+    border-bottom: 8px double rgb(0, 0, 0);
+}
+button:hover{
+    color: #808080;
+}
+.maths_name{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    display: inline-flex;
+    margin: 3px;
+    padding: 3px;
+}
+header p{
+    display:inline-block;
+}
+header h1{
+    display: inline-block;
+    margin-right: 7.5px;
+    margin-bottom: 15px;
+}
+.animes_css{
+    display: inline-block;
+}
+.aut_rights{
+    padding-top: 5px;
+}
+a{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
+    display: inline-flex;
+    margin: 3px;
+    padding: 3px;
+    color: black;
+}
+aside{
+    display: block;
+    font-size: 10px;
+}
+aside:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
+    box-shadow: 0 0 10px 0;
+}
+footer p:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+    margin:15px;
+    box-shadow: 0 0 10px 0;
+    margin-left: 25px;
+}
+.row-item {
+    margin-bottom: 5px;
+    width: 85px;
+    border: 2px solid black;
+    height: 33px;
+}
+.name_maths{
+    padding-bottom: 5.5px;
+}
 
-    <p> ua <p>
-   </header>
-    <div class="all_in">
-        <div class="h1">
-            <h1>5*5+5</h1>
-        </div>
-        <div class="buttons">
-        <div class="button">
-            <p class="btn_p">25</p>
-        </div>
-        <div class="button">
-            <p class="btn_p">67</p>
-        </div>
-        <div class="button">
-            <p class="btn_p">30</p>
-        </div>
-        <div class="button">
-            <p class="btn_p">14</p>
-        </div>
-        </div>
-    </div>
-    <div class="stats_div">
-        <center>
-        <h3 class="maths_name name_maths">Математичний квіз для</h3>
-        <select class="row-item">
-        <option>2-4 класів</option>
-    </select>
-        <button id="start_btn"> Почати </button>
-        <br><aside class="maths_name"> 
-            <p> Також від BartyukmProjects: </p>
-            <a href="https://illya-spec.github.io/bartyukmprojects/">Магазин ігрових автоматів</a>
-        </aside>
-        <div id="stats">
-            <h3>Статистика</h3>
-            </center>
-            
-            <center>
-            <p>Правильних: <span id="right_ans"></span></p>
-            <p>Точність:<span id="accuracy"></span></p>
-            </center>
-
-        </div>
-    </div>
-    <footer> 
-        <div class="aut_rights">
-            <h2>Контактна інформація: </h2>
-            <p> Ел. пошта: nq@gmail.com </p>
-            <p> Гаряча лінія: +380 110 113 </p>
-            <br><b><p> © 2025 BartyukmProjects. All rights reserved. </p></b>
-        </div>
-    </footer>
-    <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
-    <script src="script.js"></script>
-</body>
-</html>
